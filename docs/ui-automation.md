@@ -27,7 +27,7 @@ Both run in Robot Framework and are laid out to keep credentials, selectors, and
 
 ### Runner script
 
-Use the wrapper to execute every Plaid unit/e2e suite and see a concise summary:
+Use the wrapper to execute all Plaid **unit**, **integration**, and **e2e** suites and see a concise summary:
 
 ```bash
 cd /Users/kristijandimovski/Desktop/RF-FINTECH/rf-fintech
@@ -154,7 +154,7 @@ pip install robotframework-pabot  # once
 pabot --processes 4 --outputdir reports/ui_parallel tests/ui
 ```
 
-The parallel command executes one suite per Playwright browser. Adjust `--processes` to match the number of concurrent workers you want.
+The parallel command covers `tests/unit`, `tests/integration`, and `tests/e2e`. Adjust `--processes` to match the number of concurrent workers you want.
 
 ### Docker & CI/CD
 

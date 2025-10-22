@@ -1,5 +1,24 @@
-datasources:5bbe5dcf27c38621939901f3284e08acc58f18e5
-commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+datasources:ea38ed1c7d08ae20e1d6128570f58aa7bb7316c5
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
 suitesfrom:no-suites-from-option
-file:a2076137a9a56ba662000f9b4301e0265334d98b
---suite Ui.Automation Exercise
+file:3ebe3483a9b5b1e076a4ca26c1ac0fc726ff7761
+--suite Suites.E2E.Ais Happy Path
+--suite Suites.E2E.Ais Webhook Hybrid
+--suite Suites.E2E.Data Consistency Snapshot
+--suite Suites.E2E.Resilience Retry Budget
+--suite Suites.Integration.Accounts And Balances
+--suite Suites.Integration.Negative Auth
+--suite Suites.Integration.Transactions Date Window
+--suite Suites.Integration.Transactions Sync Pagination
+--suite Suites.Integration.Webhook Dedupe
+--suite Suites.Integration.Webhook Delivery
+--suite Suites.Unit.Accounts Schema Contract
+--suite Suites.Unit.Auth Token Exchange
+--suite Suites.Unit.Balances Real Time Contract
+--suite Suites.Unit.Currency Presence Contract
+--suite Suites.Unit.Institution Product Validity
+--suite Suites.Unit.Invalid Access Token Error
+--suite Suites.Unit.Missing Credentials Error
+--suite Suites.Unit.Response Time Guard
+--suite Suites.Unit.Transactions Cursor Advances
+--suite Suites.Unit.Transactions Sync Initial
