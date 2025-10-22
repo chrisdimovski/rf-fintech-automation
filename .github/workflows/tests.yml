@@ -65,14 +65,14 @@ jobs:
               -e PABOT_PROCESSES \
               -v "${{ github.workspace }}:/opt/project" \
               robot-runner:ci \
-              bash ci/scripts/run-plaid.sh;
+              ./ci/scripts/run-plaid.sh;
           else
             docker run --rm \
               -e PLAYWRIGHT_HEADLESS \
               -e PABOT_PROCESSES \
               -v "${{ github.workspace }}:/opt/project" \
               robot-runner:ci \
-              bash ci/scripts/run-ui.sh;
+              ./ci/scripts/run-ui.sh;
           fi
 
       - name: Upload Robot reports
