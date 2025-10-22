@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.9.6 on darwin)" generated="2025-10-22T15:06:36.688112" rpa="false" schemaversion="5">
+<suite id="s1" name="Ui" source="/Users/kristijandimovski/Desktop/RF-FINTECH/rf-fintech/tests/ui">
+<suite id="s1-s1" name="Automation Exercise" source="/Users/kristijandimovski/Desktop/RF-FINTECH/rf-fintech/tests/ui/automation_exercise.robot">
+<kw name="Open Browser To Automation Exercise" owner="Browser" type="SETUP">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-10-22T15:06:36.893194" level="INFO">${headless} = False</msg>
+<var>${headless}</var>
+<arg>'${HEADLESS_ENV}'.lower() in ("true", "1", "yes")</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-10-22T15:06:36.892463" elapsed="0.000904"/>
+</kw>
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-22T15:06:36.894284" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/kristijandimovski/Desktop/RF-FINTECH/rf-fintech/browser/traces/temp/c4623311-b37e-4c93-b2da-673f0989e7b8"}</msg>
+<msg time="2025-10-22T15:06:36.935780" level="FAIL">PermissionError: [Errno 1] Operation not permitted</msg>
+<var>${browser}</var>
+<arg>${BROWSER}</arg>
+<arg>headless=${headless}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="FAIL" start="2025-10-22T15:06:36.893623" elapsed="0.048239">PermissionError: [Errno 1] Operation not permitted</status>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<arg>${browser}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="NOT RUN" start="2025-10-22T15:06:36.942237" elapsed="0.000229"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="NOT RUN" start="2025-10-22T15:06:36.942715" elapsed="0.000179"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="NOT RUN" start="2025-10-22T15:06:36.943104" elapsed="0.000185"/>
+</kw>
+<doc>Launch Playwright browser and open the Automation Exercise home page.</doc>
+<status status="FAIL" start="2025-10-22T15:06:36.891558" elapsed="0.051977">PermissionError: [Errno 1] Operation not permitted</status>
+</kw>
+<test id="s1-s1-t1" name="Home Navigation And Product Search" line="18">
+<doc>Validate navigation from home to products and search results.</doc>
+<status status="FAIL" start="2025-10-22T15:06:36.943777" elapsed="0.001158">Parent suite setup failed:
+PermissionError: [Errno 1] Operation not permitted</status>
+</test>
+<test id="s1-s1-t2" name="Invalid Login Shows Error Banner" line="25">
+<doc>Attempt to log in with invalid credentials and verify the error.</doc>
+<status status="FAIL" start="2025-10-22T15:06:36.947189" elapsed="0.001027">Parent suite setup failed:
+PermissionError: [Errno 1] Operation not permitted</status>
+</test>
+<test id="s1-s1-t3" name="Add Product To Cart Displays In Summary" line="32">
+<doc>Add a product to the cart and ensure it appears in the cart summary.</doc>
+<status status="FAIL" start="2025-10-22T15:06:36.948897" elapsed="0.000733">Parent suite setup failed:
+PermissionError: [Errno 1] Operation not permitted</status>
+</test>
+<test id="s1-s1-t4" name="Footer Subscription Confirmation" line="41">
+<doc>Subscribe to the newsletter and confirm the success banner.</doc>
+<status status="FAIL" start="2025-10-22T15:06:36.950269" elapsed="0.000693">Parent suite setup failed:
+PermissionError: [Errno 1] Operation not permitted</status>
+</test>
+<kw name="Close Automation Browser" owner="Browser" type="TEARDOWN">
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-10-22T15:06:36.953630" level="FAIL">PermissionError: [Errno 1] Operation not permitted</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="FAIL" start="2025-10-22T15:06:36.952833" elapsed="0.001200">PermissionError: [Errno 1] Operation not permitted</status>
+</kw>
+<doc>Close all Playwright browser instances.</doc>
+<status status="FAIL" start="2025-10-22T15:06:36.952223" elapsed="0.002204">PermissionError: [Errno 1] Operation not permitted</status>
+</kw>
+<doc>Automation Exercise UI smoke tests using SeleniumLibrary and page objects.</doc>
+<status status="FAIL" start="2025-10-22T15:06:36.720729" elapsed="0.233901">Suite setup failed:
+PermissionError: [Errno 1] Operation not permitted
+
+Also suite teardown failed:
+PermissionError: [Errno 1] Operation not permitted</status>
+</suite>
+<status status="FAIL" start="2025-10-22T15:06:36.689384" elapsed="0.266395"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Ui" id="s1" pass="0" fail="4" skip="0">Ui</stat>
+<stat name="Automation Exercise" id="s1-s1" pass="0" fail="4" skip="0">Ui.Automation Exercise</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-10-22T15:06:36.944257" level="ERROR">Calling method '_start_test' of listener 'Browser' failed: PermissionError: [Errno 1] Operation not permitted</msg>
+<msg time="2025-10-22T15:06:36.946562" level="ERROR">Calling method '_end_test' of listener 'Browser' failed: PermissionError: [Errno 1] Operation not permitted</msg>
+<msg time="2025-10-22T15:06:36.947794" level="ERROR">Calling method '_start_test' of listener 'Browser' failed: PermissionError: [Errno 1] Operation not permitted</msg>
+<msg time="2025-10-22T15:06:36.948467" level="ERROR">Calling method '_end_test' of listener 'Browser' failed: PermissionError: [Errno 1] Operation not permitted</msg>
+<msg time="2025-10-22T15:06:36.949241" level="ERROR">Calling method '_start_test' of listener 'Browser' failed: PermissionError: [Errno 1] Operation not permitted</msg>
+<msg time="2025-10-22T15:06:36.949868" level="ERROR">Calling method '_end_test' of listener 'Browser' failed: PermissionError: [Errno 1] Operation not permitted</msg>
+<msg time="2025-10-22T15:06:36.950597" level="ERROR">Calling method '_start_test' of listener 'Browser' failed: PermissionError: [Errno 1] Operation not permitted</msg>
+<msg time="2025-10-22T15:06:36.951287" level="ERROR">Calling method '_end_test' of listener 'Browser' failed: PermissionError: [Errno 1] Operation not permitted</msg>
+<msg time="2025-10-22T15:06:36.955007" level="ERROR">Calling method '_end_suite' of listener 'Browser' failed: PermissionError: [Errno 1] Operation not permitted</msg>
+</errors>
+</robot>

@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  robot:
+    build:
+      context: .
+      dockerfile: docker/robot-runner.Dockerfile
+    image: robot-runner:local
+    working_dir: /opt/project
+    volumes:
+      - ./:/opt/project
+    environment:
+      PLAYWRIGHT_HEADLESS: "true"
+    shm_size: "2gb"

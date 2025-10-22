@@ -1,0 +1,8 @@
+robotframework
+robotframework-requests
+robotframework-jsonlibrary
+robotframework-jsonschemalibrary
+playwright
+pytest
+robotframework-browser
+robotframework-pabot

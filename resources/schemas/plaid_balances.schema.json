@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "required": ["accounts"],
+  "properties": {
+    "accounts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["balances"],
+        "properties": {
+          "balances": {
+            "type": "object",
+            "required": ["current"],
+            "properties": {
+              "available": {"type": ["number", "null"]},
+              "current": {"type": "number"}
+            }
+          }
+        }
+      }
+    }
+  }
+}
